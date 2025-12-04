@@ -1,101 +1,159 @@
-🎥 AI Video Interview Platform
+# 🎥 AI Video Interview Platform
 
-An AI-powered automated interview evaluation system built using FastAPI, Python, and PostgreSQL.
-The platform analyzes interview videos and generates detailed HR, Technical, and Cultural Fit assessments using LLMs and Google Vertex AI.
+An AI-powered automatic video interview evaluation system built using **FastAPI**, **Python**, **PostgreSQL**, **Google Vertex AI**, and **LLMs**.  
+The platform analyzes candidate interview videos, transcribes responses, and generates **Technical**, **HR**, and **Cultural Fit** assessments automatically.
 
-Project Structure
+---
 
-/Backend: FastAPI backend, APIs, model scoring, reports, and database logic
+## 📌 Features
 
-/Backend/routers: All API routes (HR, Technical, Cultural Fit, Upload, Users, Reports, Tasks)
+- 🎬 Video upload & automated audio extraction  
+- 🔊 Speech-to-text transcription (Google Vertex AI)  
+- 🤖 AI-driven scoring for HR, Technical, and Cultural rounds  
+- 🧠 LLM-powered report generation  
+- 📄 Downloadable TXT/PDF reports  
+- 🗃️ Task tracking & session management  
+- 🧩 Modular, scalable FastAPI architecture  
+- ☁️ GCP Cloud Storage integration  
 
-/Backend/services: Background logic & processing utilities
+---
 
-/Backend/uploads: Temporary video & file storage
+## 📁 Project Structure
 
-/Backend/key: GCP Vertex AI service account key
+```
+AI_Video_Interview/
+│
+├── Backend/                 
+│   ├── routers/             # All API routes
+│   ├── services/            # Core logic (audio, GCP, scoring, etc.)
+│   ├── uploads/             # Temporary video/audio storage
+│   ├── Reports/             # Generated TXT/PDF reports
+│   ├── key/                 # Vertex AI service account key
+│   ├── database.py          # DB setup
+│   ├── models.py            # SQLAlchemy models
+│   ├── schemas.py           # Pydantic schemas
+│   ├── main.py              # FastAPI entry point
+│   └── requirements.txt
+│
+├── frontend/                # Web interface (React / HTML / JS)
+├── database.sql             # PostgreSQL schema
+├── .env                     # Environment variables
+└── README.md                # Documentation
+```
 
-/Backend/Reports: Auto-generated interview reports
+---
 
-/frontend: Web interface (HTML/JS/React based)
+## 🚀 Getting Started
 
-database.sql: PostgreSQL schema
-
-requirements.txt: Backend dependencies
-
-.env: Environment configuration (DB URL, GCP key path)
-
-Getting Started
-Prerequisites
-
-Python 3.9+
-
-PostgreSQL
-
-Node.js (if using frontend)
-
-Google Cloud Vertex AI API Key (JSON)
-
-Installation
-1. Clone the Repository
+### 1️⃣ Clone the Repository
+```bash
 git clone <repository-url>
-cd AI_VIDEO_INTERVIEW
+cd AI_Video_Interview
+```
 
-2. Backend Setup
+---
+
+## 🛠️ Backend Setup
+
+```bash
 cd Backend
 python -m venv myenv
-source myenv/bin/activate     # Windows: myenv\Scripts\activate
+myenv\Scripts\activate  # Windows
+# OR
+source myenv/bin/activate # Mac/Linux
+
 pip install -r requirements.txt
+```
 
+### Create `.env` file:
 
-Create a .env file:
-
+```
 DATABASE_URL=postgresql://<user>:<password>@localhost:5432/ai_interview
 GCP_KEY_PATH=key/vertex_api.json
 BUCKET_NAME=<your-gcp-bucket>
+```
 
-
-Run the database schema:
-
+### Run database schema:
+```bash
 psql -U postgres -d ai_interview -f database.sql
+```
 
-3. Frontend Setup (optional)
-cd frontend
-npm install
-npm start
+---
 
-Running the Application
-Start Backend
-cd Backend
+## 🌐 Running the Backend
+
+```bash
 uvicorn main:app --reload
-
+```
 
 Visit:
 
-Swagger Docs → http://localhost:8000/docs
+- Swagger → http://localhost:8000/docs  
+- ReDoc → http://localhost:8000/redoc  
 
-ReDoc → http://localhost:8000/redoc
+---
 
-Start Frontend (if applicable)
+## 💻 Frontend Setup (Optional)
+
+```bash
+cd frontend
+npm install
 npm start
+```
 
+Open → http://localhost:3000
 
-Open browser → http://localhost:3000
+---
 
-Features
+## 📡 API Endpoints
 
-Video upload & processing
+### Transcription
+```
+POST /transcribe
+```
 
-AI-driven interview scoring (HR, Technical, Cultural Fit)
+### Fetch Technical Report
+```
+GET /technical/{task_id}
+```
 
-Automatic transcript extraction
+### Create Interview Task
+```
+POST /tasks/generate_task
+```
 
-Confidence-level scoring
+### User Info
+```
+GET /users/user-info?u_id=<value>
+```
 
-GCP Vertex AI integration
+---
 
-Task creation & tracking
+## 🧩 Tech Stack
 
-Report generation (TXT/PDF)
+| Layer | Technologies |
+|-------|--------------|
+| Backend | FastAPI, SQLAlchemy, Pydantic |
+| AI | Google Vertex AI, LLMs |
+| Storage | PostgreSQL, GCP Cloud Storage |
+| Frontend | React / HTML / JavaScript |
 
-User management endpoints
+---
+
+## 📝 Example cURL
+
+```bash
+curl -X GET "http://localhost:8000/technical/<TASK_ID>"
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Please maintain clean code and commit standards.
+
+---
+
+## 📜 License
+
+This project is licensed under your selected license (MIT/GPL/Apache).
