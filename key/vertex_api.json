@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ardent-bulwark-466111-h1",
+  "private_key_id": "1e765eaef1aa3da357634380807da83a681bf3a0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvqmKATZQWeFjN\nOE7uhpLy9MV2OVy3kqTPCmEx7YZvPFVmcpZiFrjyl9uZB98NvNR8O9nyh1WHVnoL\nfJqFntwIVsrwL/qZ7WlI2dVK8mxZpe7pcZhEkc1MUkDutqgWl/WOZ8CsbcM1WoDF\nnRWA3pCm9KM88bwkM0ylS+aUm9WxCwdlDi6+M9AQqv06B+ib2+s1+IgzUgxL1nZy\n9Ilxd8ghZCX3xQtcj7IB57lP1ZkNyhEdGqrwxp1nW67YsucgvxZ9/owqMDoRqISu\nmhjIu9vb+1LVdmnz4pfs8NeEjib0eEGpy7Ix2Bx1o9lS1jIzM498i1T9goI4OItp\nuDgQU54rAgMBAAECggEAPzu/H15Nq1UA6kaVqykIJqrTlb4KUQ5ZgynCWP2egdYf\nC7S9y2tQggsGAm0h7skFV/8XckUjFYecgRwGZ4kKvXm4rYMn21bpqk63h7YCKLch\nbCj23d/6HboSI5ven9ttiihw4+DS/xan+fqUrgHv4hl31U1TI1jQA0RyKRZ7crHj\nZg84RHQ5ydnpf724UNtaSFELU//i68VZ2KlUeqSXPXPKNpBKbPhAL80tXnLXeloC\n1uD+H2LPjUpiXUJ0MxAdH0ub6V3Ln33mdhQVLd+fpPGWN9b27vf3JOneUYPkHUe0\ndrOHk8EliFhjAjzsNSA8V+VUIiSTWI6C2paaTCVCcQKBgQDnOxpAvXe8g/eI3/fy\nrTWaWPQS7rcvaZlfeX4wbaHMnCDaaQY6UzngBqwcJUDFySBFflw7Pb7uWNNyau25\n4vCeyw07ZjH1fsADRzwPYjZ5JH6J9WQ0tMDoBl3wpzFuJfx7yb/kxjZDaJCVvZgR\nZ5TxQuRwzlF+dl/yX4+SCkxBUwKBgQDCe4zWA3bDvDv2ugVINq+oV3aZWVyY5DBg\nNjUmWWOboqjWUCikNKiHhyvNImstebYe6EPpM1cKzlAoo6wM4FljQAm6tcJVqXlP\nR84Tn4bP+a3+sc8MyB+MUdHs5N6FmJXoCBasNiMIcgzbkxK3hgYEkK9uZWBrhMvr\nL2hIlUvcyQKBgQDHC9JyjmanCbaoxZtr9HxjDFW2gnWAQ9e6HxxoVcdlGbUSLjwl\nMwVr+nJnnA3g9FxqVfbRLDrSc/Y41SEk1d0p5ELUsgkped2SNNzXpUSdDbQ7z9hd\nooc4dFqjUVk0p1BrwuUD6zhE2Js1u0pPGSpWcK2zCXePdBjtzCMLpP+1bwKBgE82\nTU2ZyZS9pVq/t4kLJQ6W2SpqeEmZn46AZbOB8w0f+k6YBYWkIQRabN+3Zhn2mdQK\n3CYukARJteJnj5sLAb1oBs5yW33SciN1Zp0de6ZX1qOHPoLBPABGDw/CxFN7q4r/\nSGTKBAjbkxsX0ybGwsq3N4zqY5RHWVsoSvxNOsHpAoGADDTPPFA7efFyTQS1jfXo\njiWLje3bhMgOfGqHHXQ4ahMX+YZ0oKsAug9F0lBSM7RHGKjXmk0se1i78Wa/z3Es\nOOTeILRtGeR25jA0pcAyyzy0HjeQM2k8YSkK6qwbnfBTG+5hk1to6asD7Jvq53ZH\n3lcQISXDgBG1spa4LF2qiEY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vertex-speech-gemini-api@ardent-bulwark-466111-h1.iam.gserviceaccount.com",
+  "client_id": "108258995189646741591",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vertex-speech-gemini-api%40ardent-bulwark-466111-h1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

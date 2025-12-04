@@ -1,0 +1,48 @@
+# ------------ PYTHON ------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ------------ ENVIRONMENT ------------
+.env
+env/
+venv/
+myenv/
+.venv/
+
+# ------------ EDITOR ------------
+.vscode/
+.idea/
+
+# ------------ LOGS ------------
+*.log
+
+# ------------ BYTECODE / CACHE ------------
+*.pytest_cache/
+.pytest_cache/
+*.mypy_cache/
+mypy_cache/
+*.ruff_cache/
+
+# ------------ FASTAPI / UVICORN ------------
+*.db
+*.sqlite3
+
+# ------------ UPLOADS ------------
+Backend/uploads/
+Backend/Reports/
+
+# ------------ GCP / SECRETS ------------
+Backend/key/
+*.json
+
+# ------------ FRONTEND ------------
+node_modules/
+dist/
+build/
+
+# ------------ OS FILES ------------
+.DS_Store
+Thumbs.db

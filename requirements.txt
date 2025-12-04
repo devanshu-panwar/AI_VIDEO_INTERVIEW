@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-dotenv
+psycopg2-binary
+google-cloud-storage
+google-cloud-speech
+vertexai
+pydantic
+ffmpeg-python
+sqlalchemy
+email-validator
+python-multipart
